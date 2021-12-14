@@ -1,0 +1,208 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 oct. 2021, 12:56:35
+    Author     : juancarrizo
+*/
+.direct-chat-text {
+    margin: 0px !important;
+    padding: 0px 0px 0px 5px !important;
+}
+
+.direct-chat-msg {
+    margin-bottom: 0px !important;
+    width: calc(100% - 5px) !important;
+    line-height: 100% !important;
+    text-align: right !important;
+}
+
+.direct-chat-msg.right {
+    text-align: left !important;
+}
+
+.direct-chat-text {
+    background-color: #f9f9f9 !important;
+    border: 1px solid #f9f9f9 !important;
+}
+
+.direct-chat-text::after,
+.direct-chat-text::before {
+    border-right-color: #f9f9f9 !important;
+}
+
+
+
+.direct-chat-primary .right>.direct-chat-text {
+    background-color: #f9f9f9 !important;
+    border-color: #f9f9f9 !important;
+    color: #000 !important;
+}
+
+.right .direct-chat-text {
+    margin-left: 0 !important;
+    margin-right: 0px !important;
+}
+
+.direct-chat-primary .right>.direct-chat-text::after,
+.direct-chat-primary .right>.direct-chat-text::before {
+    border-left-color: #f9f9f9 !important;
+}
+
+
+
+
+/*Divider*/
+.wrapper-content {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    /*bottom: 0;*/
+    left: 0;
+
+    background-color: #dedede;
+}
+
+.inner-wrapper,
+.center.pane .inner {
+    display: table;
+    width: 100%;
+    /*                height: 100%;*/
+}
+
+.pane {
+    display: table-cell;
+}
+
+.left.pane {
+    width: 70%;
+    background-color: black;
+    border-right: 5px solid gray;
+}
+
+.center.pane .inner .top,
+.center.pane .inner .bottom {
+    display: table-row;
+
+}
+
+.right.pane {
+    background-color: #fff;
+}
+.right.pane .card-header{
+    padding: 0px 10px 3px;
+}
+video.OT_video-element{
+    object-fit: contain !important;
+}
+.card{
+    margin-bottom: 0px !important;
+}
+.right.pane .card-footer{
+    padding: 0px;
+}
+@media (max-width: 790px) {
+    .left.pane{
+        border-right:unset;
+        width: 100%;
+        display: table-caption;
+    }
+    .right.pane {
+        width: 100%;
+    }
+    .wrapper-content {
+        width: calc(100% - 15px) !important;
+        margin: auto !important;
+    }
+}
+
+.video-chat-container{
+    height: 350px;
+    width: 100%;
+    display: none;
+}
+.direct-chat-primary .right > .direct-chat-text::after, .direct-chat-primary .right > .direct-chat-text::before {
+    border-left-color: #fff;
+    display: none;
+}
+.right .direct-chat-text::after, .right .direct-chat-text::before {
+    border-left-color: #fff;
+    border-right-color: transparent;
+    display: none;
+}
+/*Divider*/
+
+/******Otros********/
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/**********/
+.card {
+    width: 100% !important;
+}
+
+.box-img img {
+    width: 130px !important;
+    height: 130px !important;
+    object-fit: cover;
+    object-position: center center;
+    margin-left: -15%;
+}
+
+.box-img-card2 img {
+    width: 110px !important;
+    height: 110px !important;
+    object-fit: cover;
+    object-position: center center;
+    /* margin-left: -15%; */
+}
+
+.widget-user .widget-user-header {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    height: 180px !important;
+    padding: 1rem;
+    text-align: center;
+}
+/**********/
+/******Otros********/
